@@ -38,10 +38,14 @@ function viewImgs(imgs) {
         let imgItem = document.createElement("img");
         imgItem.src = img.urls.regular;
 
-        let dwnBtn = document.createElement("button");
+        let dwnBtn = document.createElement("a");
         dwnBtn.innerHTML = "<i class='fa fa-download'></i>";
         dwnBtn.classList.add("dwnBtn");
-        dwnBtn.addEventListener("click", );
+        dwnBtn.href = img.links.download;
+        dwnBtn.rel = "nofollow";
+        dwnBtn.download = "";
+        dwnBtn.title = "Descargar foto";
+        console.log(img);
 
         let articleItem = document.createElement("article");
         articleItem.appendChild(imgItem);
@@ -49,9 +53,4 @@ function viewImgs(imgs) {
 
         list.appendChild(articleItem);
     });
-}
-
-function downloadButton() {
-    // console.log(img.urls.regular);
-    
 }
