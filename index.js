@@ -31,6 +31,7 @@ async function getImgs(str) {
 }
 
 function viewImgs(imgs) {
+    document.querySelector("#txtIntro").style.display = "none";
     let list = document.querySelector("#listImgs");
     
     list.innerHTML = "";
@@ -45,7 +46,6 @@ function viewImgs(imgs) {
         dwnBtn.rel = "nofollow";
         dwnBtn.download = "";
         dwnBtn.title = "Descargar foto";
-        console.log(img);
 
         let articleItem = document.createElement("article");
         articleItem.appendChild(imgItem);

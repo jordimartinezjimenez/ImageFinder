@@ -21,6 +21,7 @@ main {
     display: flex;
     margin: auto;
     max-width: 800px;
+    justify-content: center;
 }
 
 .listImgs {
@@ -81,4 +82,10 @@ main {
 
 .dwnBtn:hover {
     cursor: pointer;
+}
+
+#searchBtn {
+    background-color: transparent;
+    outline: 0;
+    border: 0;
 }
